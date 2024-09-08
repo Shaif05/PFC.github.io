@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefeuille de compétences</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Portefeuille de Compétences</h1>
+        </div>
+    </header>
+    <div class="nav-buttons">
+        <button id="btn1" onclick="openPopup('popup1')">Développer</button>
+        <button id="btn2" onclick="openPopup('popup2')">Entreprendre</button>
+        <button id="btn3" onclick="openPopup('popup3')">Métier</button>
+    </div>
+
+
+
+    <div id="popup1" class="popup">
+        <div class="popup-content" onclick="event.stopPropagation();">
+            <!--<span class="close" onclick="closePopup()">&times;</span>-->
+            <h2>Développer</h2>
+            <p>Développer un ecosystème numérique complexe</p>
+            <div>
+                <button onclick="openPopup('ac3401')">AC34.01 | Développer à l'aide d'un framework de développement côté client</button>
+                <button onclick="openPopup('ac3403')">AC34.03 | Développer des dispositifs intéractifs sophistiqués</button>
+                <button onclick="openPopup('ac3404')">AC34.04 | Concevoir et développer des composants logiciels, plugins ou extensions</button>
+            </div> 
+        </div>
+    </div>
+
+    <div id="ac3401" class="popup">
+        <div class="popup-content" onclick="event.stopPropagation();">
+            <!--<span class="close" onclick="closePopup()">&times;</span>-->
+            <h2>AC34.01 | Développer à l'aide d'un framework de développement côté client</h2>
+            <span>
+                <p>Lors de mes travaux pratiques en Développement Front, j'ai acquis des compétences solides en utilisant le framework Flutter pour le développement d'applications mobiles. Flutter, en tant qu'outil côté client, m'a permis de créer des applications interactives, comme l'application de réalité augmentée dans le cadre de la SAE 501, ainsi que des projets plus complexes dans le cours R505 Dev Front Avancé.</p>
+
+                <p>J'ai particulièrement travaillé avec l'API REST Countries, qui fournit des informations détaillées sur les pays du monde. En intégrant cette API, j'ai appris à effectuer des requêtes, traiter les données reçues, et les présenter de manière claire et dynamique à l'utilisateur. L'utilisation de divers plugins disponibles sur Flutter m'a également permis d'enrichir les fonctionnalités et l'interactivité de mes applications.</p>
+
+                <p>Dans le TP de Développement Front, j'ai conçu une interface utilisateur où l'on peut sélectionner une région pour obtenir des informations sur les pays correspondants. Ce projet a posé les bases pour des développements plus avancés, comme l'application de réalité augmentée, en me familiarisant avec la gestion des routes, la création de différentes vues, et l'utilisation de fonctions et d'API complexes.</p>
+
+                <p>En résumé, ces expériences m'ont permis de développer une expertise en Flutter, notamment dans la création d'interfaces utilisateur, l'intégration de plugins et API, et le développement de bonnes pratiques en expérience utilisateur, ce qui m'est essentiel pour tout projet futur.</p>
+            </span>
+            <img src="rest_c.png" alt="">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="ac3403" class="popup">
+        <div class="popup-content" onclick="event.stopPropagation();">
+            <!--<span class="close" onclick="closePopup()">&times;</span>-->
+            <h2>AC34.03 | Développer des dispositifs intéractifs sophistiqués</h2>
+            <span>
+                <p>Grâce à la ressource 507 Dispositifs interactifs, j'ai approfondi ma maîtrise du moteur de jeu Unity, ce qui m'a permis de créer des jeux et des expériences complexes. Parmi mes réalisations, je peux citer une simulation réaliste d'une nuée d'oiseaux et un jeu de type "Runner" basé sur le thème de la médecine.</p>
+
+                <p>Au cours de cette troisième année, j'ai perfectionné mes compétences en génération procédurale sur Unity, ce qui m'a aidé à développer un jeu "Runner". Dans ce jeu, le personnage avance automatiquement sur plusieurs couloirs tout en évitant des obstacles, avec l'objectif d'obtenir le meilleur score possible. J'ai utilisé Unity et des scripts C# pour générer les couloirs et les obstacles de manière procédurale, avec des tournants et des positions aléatoires selon des règles définies. La difficulté augmente progressivement avec la vitesse de déplacement du joueur.</p>
+
+                <p>Pour enrichir l'expérience de jeu, j'ai intégré des contrôles permettant au joueur d'interagir avec l'environnement, notamment via des mouvements latéraux, des sauts, des glissades.</p>
+
+                <p>En conclusion, ce projet de jeu vidéo démontre mes compétences dans le développement de dispositifs interactifs et l'équilibrage des fonctionnalités pour garantir une expérience utilisateur fluide. Ces compétences, nettement améliorées par rapport à l'année précédente, enrichissent mes applications et seront précieuses pour mes projets futurs.</p>
+            </span>
+            <img src="FTP.png" alt="">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="ac3404" class="popup">
+        <div class="popup-content" onclick="event.stopPropagation();">
+            <!--<span class="close" onclick="closePopup()">&times;</span>-->
+            <h2>AC34.04 | Concevoir et développer des composants logiciels, plugins ou extensions</h2>
+            <span>
+                <p>Cette année, j'ai travaillé sur un projet majeur de réalité augmentée pour l'IUT de Bobigny, où j'ai développé une application mobile destinée à être utilisée sur Android. Ce projet nécessitait deux fonctionnalités principales : un scanner de QR Code et l'intégration de la réalité augmentée. J'ai choisi d'utiliser Flutter en combinaison avec ARCore, tirant parti des nombreux plugins disponibles pour faciliter le développement.</p>
+
+                <p>Pour le Scanner de QR Code, j'ai intégré un plugin dédié, permettant d'identifier et de récupérer les données à partir de la caméra. J'ai d'abord implémenté une demande d'autorisation d'accès à la caméra, garantissant la sécurité et la transparence pour l'utilisateur. Ensuite, j'ai créé mes propres QR Codes personnalisés en fonction des données nécessaires, et j'ai conçu un système qui redirige l'utilisateur vers des pages spécifiques en fonction des informations contenues dans chaque QR Code.</p>
+
+                <p>En ce qui concerne la Réalité Augmentée, j'ai utilisé un plugin compatible avec ARCore pour créer des scènes interactives. Ces scènes incluent divers éléments 3D, tels que des boutons et des images, qui sont affichés en fonction du QR Code scanné. L'interaction dans ces scènes est rendue possible par les boutons permettant d'accéder à différentes informations, créant ainsi une expérience immersive pour l'utilisateur.</p>
+
+                <p>En conclusion, ces projets m'ont permis d'acquérir une solide expertise dans le développement de composants logiciels, en les adaptant à mes besoins spécifiques et en créant mes propres extensions basées sur ces fondations. Je suis désormais capable de reproduire ou de créer ce type d'extensions pour mes futures applications, ce qui simplifiera grandement ma programmation.</p>
+            </span>
+            <img src="maquete.png" alt="">
+            <p></p>
+        </div>
+    </div>
+
+    
+
+
+
+    <div id="popup2" class="popup">
+        <div class="popup-content" onclick="event.stopPropagation();">
+            <!--<span class="close" onclick="closePopup()">&times;</span>-->
+            <h2>Entreprendre</h2>
+            <p>Entreprendre dans le secteur du numérique</p>
+            <div>
+                <button onclick="openPopup('ac3501')">AC 35.01 | Piloter un produit, un service ou une équipe</button>
+                <button onclick="openPopup('ac3503')">AC 35.03 | Concevoir un projet d'entreprise innovante en définissant son identité</button>
+                <button onclick="openPopup('ac3504')">AC 35.04 | Défendre un projet de manière convaincante</button>
+            </div> 
+        </div>
+    </div>
+
+    <div id="ac3501" class="popup">
+        <div class="popup-content" onclick="event.stopPropagation();">
+            <!--<span class="close" onclick="closePopup()">&times;</span>-->
+            <h2>AC 35.01 | Piloter un produit, un service ou une équipe</h2>
+            <span>
+                <p>En tant que responsable technique pour le développement de l'application de réalité augmentée Univizion, réalisée par Vizionnaires, j'ai joué un rôle clé dans la réussite de ce projet. Vizionnaires était divisée en trois pôles correspondant aux parcours de la formation : design, communication, et développement. Étant membre du pôle développement, j'étais chargé de superviser la partie technique du projet.</p>
+
+                <p>L'une de mes principales responsabilités était de faire des choix techniques pour le développement de l'application. Après une analyse approfondie, j'ai opté pour Flutter et ARCore en raison de leur compatibilité et de leur facilité d'utilisation. Pour l'environnement de développement, j'ai choisi Android Studio, qui offre un meilleur rendu et des capacités de test optimisées sur Android, tout en étant compatible avec Flutter (Dart) et ARCore, deux technologies développées par Google.</p>
+
+                <p></p>
+
+                <p>En conclusion, ce projet a démontré ma capacité à piloter un produit et une équipe, en mettant en place des moyens efficaces de communication et de gestion du travail. J'ai non seulement amélioré mes compétences en analyse, en prise de décision, et en travail d'équipe, mais j'ai également prouvé mes talents en tant que développeur web.</p>
+            </span>
+            <img src="univ.png" alt="">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="ac3503" class="popup">
+        <div class="popup-content" onclick="event.stopPropagation();">
+            <!--<span class="close" onclick="closePopup()">&times;</span>-->
+            <h2>AC 35.03 | Concevoir un projet d'entreprise innovante en définissant son identité</h2>
+            <span>
+                <p>Dans le cadre de la R503 Entreprenariat, j'ai appris les bases du fonctionnement d'une entreprise, notamment la création d'un business plan, la gestion des finances, les statuts juridiques, et la gestion des dépenses. En aboutissement de ce module, nous avons présenté un projet d'entreprise fictive, accompagné d'un business plan sur trois ans.</p>
+
+                <p>Pour ce projet, notre équipe a développé une identité pour notre entreprise fictive. Nous avons créé Hugo Prods, une agence de communication visuelle offrant un suivi complet de vos projets multimédia. De la direction artistique au développement de sites web, en passant par l'audiovisuel, notre agence se concentre sur la fourniture d'un service haut de gamme, complet et personnalisé.</p>
+
+                <p>En ce qui concerne la forme juridique, c'était un exercice inédit pour moi. Nous avons opté pour une SAS (Société par Actions Simplifiée), qui offre une grande flexibilité en matière de gestion et de structuration de l'entreprise. Cette forme juridique est particulièrement adaptée pour une entreprise tournée vers l'avenir, car elle limite les responsabilités des associés tout en permettant des ajustements selon les besoins.</p>
+
+                <p>En conclusion, cet exercice a été une expérience enrichissante, bien que nouvelle pour moi. Je reconnais qu'il me reste encore beaucoup à apprendre pour maîtriser pleinement ces compétences, mais je suis convaincu d'être sur la bonne voie pour continuer à progresser dans ce domaine.</p>
+            </span>
+            <img src="hugoprods.png" alt="">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="ac3504" class="popup">
+        <div class="popup-content" onclick="event.stopPropagation();">
+            <!--<span class="close" onclick="closePopup()">&times;</span>-->
+            <h2>AC 35.04 | Défendre un projet de manière convaincante</h2>
+            <span>
+                <p>Pour finaliser notre projet d'application en réalité augmentée, mon équipe et moi avons défendu notre concept devant un jury. J'ai expliqué en profondeur les fonctionnalités de l'application, leur utilisation concrète, ainsi que les raisons derrière nos choix de conception.</p>
+
+                <p>Après la présentation, j'ai répondu aux questions du jury, en abordant les aspects techniques et en clarifiant nos décisions, tout en mettant en lumière les atouts de notre solution, Univizion.</p>
+
+                <p>J'ai pu renforcer mes compétences en présentation au fil du temps. Ces trois années de formation en BUT ont considérablement amélioré ma confiance en moi lors de mes prises de parole en public, ainsi que mon efficacité dans la façon de communiquer, tant par mon attitude que par la qualité des supports visuels utilisés.</p>
+
+            </span>
+            <img src="acc_univ.png" alt="">
+            <p></p>
+        </div>
+    </div>
+
+
+
+
+    <div id="popup3" class="popup">
+        <div class="popup-content" onclick="event.stopPropagation();">
+            <!--<span class="close" onclick="closePopup()">&times;</span>-->
+            <h2>Métier</h2>
+            <p>Compétences métiers et soft skills en entreprise</p>
+            <div>
+                <button onclick="openPopup('ac3601')">AC36.01 | Conception d'un outil local destiné aux salariés</button>
+                <button onclick="openPopup('ac3602')">AC36.02 | Conception et déploiement d'un site web local simple d'utilisation</button>
+            </div> 
+        </div>
+    </div>
+
+    <div id="ac3601" class="popup">
+        <div class="popup-content" onclick="event.stopPropagation();">
+            <!--<span class="close" onclick="closePopup()">&times;</span>-->
+            <h2>AC36.01 | Conception d'un outil local destiné aux salariés</h2>
+            <span>
+                <p>En tant que développeur web pour l'association CASP, j'ai été chargé de concevoir et de développer un site web destiné à centraliser la gestion des signatures de courriel pour l'ensemble des salariés. L'objectif principal de ce projet était de fournir une solution simple et efficace permettant de créer et de maintenir une signature standardisée, tout en offrant la flexibilité nécessaire pour refléter les différentes actions et communications de l'association.</p>
+
+                <p>Conscient du besoin de mise à jour fréquente des signatures, en fonction des campagnes ou événements en cours, j'ai mis en place une interface d'administration conviviale. Cette interface est spécifiquement conçue pour le service communication, afin de leur permettre de modifier rapidement et facilement le contenu de la signature, sans nécessiter d'intervention technique. Cette solution a ainsi permis de garantir une cohérence dans la communication de l'association tout en s'adaptant aux évolutions et aux besoins quotidiens de l'équipe.</p>
+
+                <p>Mon travail a non seulement répondu à une problématique pratique, mais il a également contribué à améliorer l'efficacité et la réactivité de l'équipe de communication, en leur offrant un outil intuitif et adapté à leurs besoins.</p>
+            </span>
+            <img src="signature.PNG" alt="">
+            <p></p>
+        </div>
+    </div>
+
+    <div id="ac3602" class="popup">
+        <div class="popup-content" onclick="event.stopPropagation();">
+            <!--<span class="close" onclick="closePopup()">&times;</span>-->
+            <h2>AC36.02 | Conception et déploiement d'un site web local simple d'utilisation</h2>
+            <span>
+                <p>En tant que développeur web pour l'association CASP, j'ai été chargé de concevoir et de développer un site catalogue interactif destiné à centraliser et organiser l'ensemble des produits et services proposés par l'association. L'objectif principal de ce projet était de fournir une plateforme en ligne simple et intuitive permettant aux utilisateurs internes et externes de naviguer facilement parmi les offres disponibles, tout en garantissant une présentation cohérente et attrayante des informations.</p>
+
+                <p>Conscient de la diversité des publics de l'association et du besoin de rendre l'accès aux informations le plus fluide possible, j'ai mis en place une interface utilisateur conviviale, avec des menus clairs, des filtres pertinents, et des fonctionnalités de recherche avancées. Le site a été développé sur WordPress, offrant ainsi une flexibilité dans la gestion des contenus et permettant aux équipes internes de mettre à jour le catalogue de manière autonome, sans nécessiter de compétences techniques avancées.</p>
+
+                <p>Cette solution a permis non seulement d'améliorer la visibilité des offres de l'association, mais également de renforcer l'expérience utilisateur en offrant un accès rapide et simple aux informations recherchées. Mon travail a contribué à accroître l'efficacité des équipes internes, qui peuvent désormais gérer le catalogue de manière proactive, tout en augmentant la satisfaction des utilisateurs grâce à une interface claire et intuitive.</p>
+
+            </span>
+            <img src="catalogue.png" alt="">
+            <p></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
